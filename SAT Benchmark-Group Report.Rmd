@@ -1,11 +1,11 @@
 ---
-title: "SAT Benchmark Performance in Connecticut in 2012 & 2013"
+title: "SAT Benchmark Performance in Connecticut in 2012-13"
 output: 
-  pdf_document: default
-  html_document:
-    df_print: paged
   github_document:
     default
+  html_document:
+    df_print: paged
+  pdf_document: default
 ---
 
 
@@ -99,6 +99,7 @@ data %>%
     y = "Benchmark Meeting Rate", x = "Year"
   ) + theme_bw()
 ```
+
 From the graphic above , in 2012 the BMRs of Connecticut schools distributed from 0 to 80 percent, but in 2013 the rate went up a little bit, a couple of schools' numbers almost over 80 percent.
 
 
@@ -118,7 +119,7 @@ The data is relatively scattered, but we can see a weak positive linear trend.
 We can create a linear model using root mean squared residuals.
 
 ```{r}
-#mean-square residuals
+#root-mean-square residuals
 measure_distance <- function(mod,data){
   diff <- data$bmr - (mod[1] + data$pop*mod[2])
   sqrt(mean(diff^2))
