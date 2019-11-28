@@ -17,7 +17,3 @@ The primary dataset provided SAT Benchmark Meeting and participation rate, but i
 BMR is calculated as such:
 
 bmr = number of meeting Benchmark / number of total seniors 
-
-= (t_takes*perc_mb) / (t_takes/part_rate) 
-
-= pec_mb*part_rate
