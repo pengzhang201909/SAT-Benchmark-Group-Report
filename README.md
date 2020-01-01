@@ -1,6 +1,6 @@
 # SAT-Benchmark-Group-Report
 
-By Michael Chen , Mingyang Su and Alex P Zhang
+By Michael Chen , Mingyang Su and Alex Peng Zhang
 
 
 Our goal is to practice and develop our Exploratory Data Analysis(EDA) skills in R. 
